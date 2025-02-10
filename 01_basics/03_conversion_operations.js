@@ -37,3 +37,30 @@ console.log(Number(val2)); // NaNs
 console.log(Number(true)); // 1
 console.log(Number(false)); // 0
 console.log(Number("Shivani")); // NaN
+
+// Boolean conversion
+let loggedIn = 1;
+console.log(Boolean(loggedIn)); // true
+
+loggedIn = 0;
+console.log(Boolean(loggedIn)); // false
+
+loggedIn = "";
+console.log(Boolean(loggedIn)); // false
+
+loggedIn = "shivani";
+console.log(Boolean(loggedIn)); // true
+
+// String conversion
+let something = 33;
+console.log(String(something));
+console.log(typeof(String(something)));
+
+something = undefined;
+console.log(String(something)); // undefined 
+
+something = null;
+console.log(String(something)); // null
+
+something = NaN;
+console.log(String(something)); // NaN
