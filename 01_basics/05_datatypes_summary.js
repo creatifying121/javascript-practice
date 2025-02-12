@@ -99,3 +99,37 @@ console.table(values);
     │ 16      │ [Error: Error]                                           │ 'object'     │
     └─────────┴──────────────────────────────────────────────────────────┴──────────────┘
 */
+
+
+// ============================================ STACK AND HEAP MEMORY ============================================
+
+// Stack => Primitives are stored here (whenever stack is being used, then we are getting copy of those things/varialbes)
+
+// Heap => Non-primitives are stored in here (whenever heap is being used, then we are getting reference to that thing/variable, so whatever changes are being made will directly be made in the original variable itself)
+
+// Stack example
+let myRealName = "pooja";
+let myOfficialName = myRealName;
+
+console.log(myRealName); // pooja
+console.log(myOfficialName); // pooja
+
+myOfficialName = "shivani";
+
+console.log(myRealName); // pooja
+console.log(myOfficialName); // shivani
+
+// Heap example
+let objOne = {
+    user: "user@google.com",
+    upi: "user@okicici",
+}
+
+let objTwo = objOne;
+
+console.log(objOne.user); // user@google.com
+console.log(objTwo.user); // user@google.com
+
+objTwo.user = "shivani@sap.com";
+console.log(objOne.user); // shivani@sap.com
+console.log(objTwo.user); // shivani@sap.com
