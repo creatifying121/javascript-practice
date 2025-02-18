@@ -117,7 +117,7 @@ console.log(myOfficialName); // pooja
 myOfficialName = "shivani";
 
 console.log(myRealName); // pooja
-console.log(myOfficialName); // shivani
+console.log(myOfficialName); // shivani (change made in the copy, and not in the original variable)
 
 // Heap example
 let objOne = {
@@ -131,5 +131,5 @@ console.log(objOne.user); // user@google.com
 console.log(objTwo.user); // user@google.com
 
 objTwo.user = "shivani@sap.com";
-console.log(objOne.user); // shivani@sap.com
-console.log(objTwo.user); // shivani@sap.com
+console.log(objOne.user); // shivani@sap.com (change made in the original variable itself)
+console.log(objTwo.user); // shivani@sap.com (change made in the original variable itself)
