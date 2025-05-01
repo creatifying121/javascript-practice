@@ -1,7 +1,0 @@
-Frontend Route:
-
-Week 1-4: HTML/CSS/JS deeply
-Week 5-8: React fundamentals
-Week 9-11: TypeScript integration
-Week 12-16: Next.js applications
-Week 16-20: Real project building
